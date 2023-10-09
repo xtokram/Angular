@@ -1,0 +1,16 @@
+<div class="container-sm">
+    <form>
+        <fieldset>
+        <legend>Cadastre um carro</legend>
+        <div class="mb-3">
+            <label for="disabledTextInput" class="form-label">Nome</label>
+            <input type="text" name="nome" class="form-control" [(ngModel)]="carro.nome">
+        </div>
+        <div class="mb-3">
+            <label for="disabledTextInput" class="form-label">Ano</label>
+            <input type="number" name="ano" class="form-control" [(ngModel)]="carro.ano">
+        </div>
+        <button (click)="addEmitLista()" class="btn btn-primary">Salvar</button>
+        </fieldset>
+    </form>
+</div>
