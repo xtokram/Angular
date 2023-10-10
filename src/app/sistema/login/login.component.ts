@@ -14,11 +14,11 @@ export class LoginComponent {
   roteador = inject(Router);
 
   logar(){
-    if(this.usuario.login == 'admin' && this.usuario.senha == 'admin'){
+    if(this.usuario.login == 'admin' && this.usuario.senha == 'senhaforte'){
       this.roteador.navigate(['/admin'])
     }
     else{
-      alert('usuario ou senha incorreto');
+      alert('Usuário ou senha estão incorretos');
     }
   }
 
